@@ -1,0 +1,16 @@
+name = "kv-cache-workers"
+type = "javascript"
+workers_dev = true
+
+# Replace with your account ID, discovered via `wrangler whoami`
+account_id = ""
+
+# Replace the id/preview_id with your own kv namespace values,
+# created via `wrangler kv:namespace create KV_CACHE`
+kv_namespaces = [
+  { binding = "KV_CACHE", id = "VALUE", preview_id = "VALUE" }
+]
+
+# Enable when ready to deploy to production routes
+# route = ""
+# zone_id = ""
